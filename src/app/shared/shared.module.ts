@@ -6,6 +6,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTab, MatTabsModule } from '@angular/material/tabs';
+import { MatCardModule } from '@angular/material/card';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 
 @NgModule({
@@ -16,6 +19,9 @@ import { MatTab, MatTabsModule } from '@angular/material/tabs';
     MatMenuModule,
     MatToolbarModule,
     MatTabsModule,
+    MatCardModule,
+    MatProgressBarModule,
+    DragDropModule,
   ],
 
   exports: [
@@ -24,6 +30,9 @@ import { MatTab, MatTabsModule } from '@angular/material/tabs';
     MatMenuModule,
     MatToolbarModule,
     MatTabsModule,
+    MatCardModule,
+    MatProgressBarModule,
+    DragDropModule,
   ],
 
   declarations: [

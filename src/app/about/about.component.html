@@ -1,10 +1,49 @@
 <mat-grid-list cols="4" rowHeight="2:1">
+  <mat-grid-tile  colspan="4" rowspan="3" style="background: #DDBDF1">
+    <p>A Oak-T oferece soluções em TI para os mais diversos ramos de atuação.</p>
+    <p>Nosso objetivo é entender as necessidades de nossos clientes para oferecer o que existe de mais moderno e inovador.</p>
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="3" rowspan="3" style="background: lightblue">
+    <mat-grid-tile-header>Nossas maiores inspirações</mat-grid-tile-header>
+    
+    
+    
+    <mat-card cdkDrag>
+      <mat-card-title>Missão</mat-card-title>
+      <mat-card-subtitle>O que nos move</mat-card-subtitle>
+      <mat-card-content>Oferecer soluções em TI com a mais alta eficiência e segurança. Atendendo todas as 
+        necessidades de nossos clientes.
+      </mat-card-content>
+    </mat-card>
+   </mat-grid-tile>
+
+  <mat-grid-tile colspan="1" rowspan="3" style="background: lightgreen">
+    semente
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="1" rowspan="3" style="background: lightgreen">
+    folha
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="3" rowspan="3" style="background: lightpink">
+    <mat-grid-tile-header>Os caminhos para a escalada</mat-grid-tile-header>
+    <mat-card cdkDrag>
+      <mat-card-title>Visão</mat-card-title>
+      <mat-card-subtitle>Onde queremos chegar</mat-card-subtitle>
+      <mat-card-content>Ser uma empresa inovadora em soluções de TI. Buscando reconhecimento pela 
+        qualidade, organização e eficiência no atendimento de todos os nossos clientes.
+      </mat-card-content>
+    </mat-card>
+   </mat-grid-tile>
+
     <mat-grid-tile
         *ngFor="let tile of tiles"
         [colspan]="tile.cols"
         [rowspan]="tile.rows"
         [style.background]="tile.color">
       {{tile.text}}
-     </mat-grid-tile>
+    </mat-grid-tile>
+
 
 </mat-grid-list>

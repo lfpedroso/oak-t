@@ -12,9 +12,11 @@ export interface Tile {
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
+
 export class AboutComponent implements OnInit {
+
   tiles: Tile[] = [
-    {text: 'Teste', cols: 4, rows: 3, color: 'lightblue'},
+    {text: 'Missão: Ser uma empresa inovadora em soluções de TI. Buscando reconhecimento pela qualidade, organização e eficiência no atendimento de todos os nossos clientes.', cols: 4, rows: 3, color: 'lightblue'},
     {text: 'teste', cols: 1, rows: 2, color: 'lightgreen'},
     {text: 'teste', cols: 3, rows: 2, color: 'lightpink'},
     {text: 'teste', cols: 4, rows: 3, color: '#DDBDF1'},
